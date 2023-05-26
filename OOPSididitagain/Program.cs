@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-public class Person
-{
-    public DateTime Birthdate { get; set; }
-}
+var person = new Person(new DateTime(1996, 04, 24));
+Console.WriteLine(person.Age);
