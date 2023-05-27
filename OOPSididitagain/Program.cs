@@ -7,3 +7,7 @@ Console.WriteLine(person.Age);
 var cookie = new IndexObject();
 cookie["name"] = "Daniel";
 Console.WriteLine(cookie["name"]);
+
+var text = new Text();
+text.Width = 100;
+text.Copy();
