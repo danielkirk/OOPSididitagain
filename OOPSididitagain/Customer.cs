@@ -5,7 +5,24 @@ public class Customer
     public string Name { get; set; }
     public void Promote()
     {
-        var calculator = new RateCalculator();
-        calculator.Calculate(this);
+        var rating = CalculateRating();
+        if (rating > 0)
+        {
+            Console.WriteLine("Promotion time!");
+        }
+        else
+        {
+            Console.WriteLine("Sorry, maybe next time.");
+        }
+    }
+
+    private int CalculateRating()
+    {
+        return 1;
+    }
+
+    protected string GetAccessToVoucher(bool allowVoucher)
+    {
+        return allowVoucher ? "You have a voucher" : "No voucher for you sir";
     }
 }
